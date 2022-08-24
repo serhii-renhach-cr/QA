@@ -8,4 +8,4 @@ def is_valid(password):
         print(False)
 
 
-is_valid('Qwerty1234')
+is_valid('Qwerty1234wqwqw')
