@@ -104,7 +104,14 @@ class Triangle():
 
 
 
-Triangle1 = Triangle(11,11,11)
+#Triangle1 = Triangle(3, 4, 5)
+#Triangle1 = Triangle(2, 3, 4)
+#Triangle1 = Triangle(66, 67, 68)
+#Triangle1 = Triangle(20, 20, 25)
+#Triangle1 = Triangle(5, 6, 20)
+#Triangle1 = Triangle('q', 'w', 'e')
+#Triangle1 = Triangle(0, 0, 0)
+#Triangle1 = Triangle(-2, -3, -5)
 Triangle1.perimetr()
 Triangle1.square()
 Triangle1.type()
