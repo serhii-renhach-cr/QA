@@ -104,7 +104,7 @@ class Triangle():
 
 
 
-#Triangle1 = Triangle(3, 4, 5)
+Triangle1 = Triangle(3, 4, 5)
 #Triangle1 = Triangle(2, 3, 4)
 #Triangle1 = Triangle(66, 67, 68)
 #Triangle1 = Triangle(20, 20, 25)
