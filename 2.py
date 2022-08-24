@@ -1,24 +1,20 @@
-MORSE = {'.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f', '--.': 'g', '....': 'h', '..': 'i',
-         '.---': 'j', '-.-': 'k', '.-..': 'l', '--': 'm', '-.': 'n', '---': 'o', '.--.': 'p', '--.-': 'q', '.-.': 'r',
-         '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x', '-.--': 'y', '--..': 'z', '-----': '0',
-         '.----': '1', '..---': '2', '...--': '3', '....-': '4', '.....': '5', '-....': '6', '--...': '7', '---..': '8',
-         '----.': '9'}
+def get_two_max():
+    import random
 
-# morse_decoder(".. -   .-- .- ...   .-   --. --- --- -..   -.. .- -.--") ->  "it was a good day"
+    random_list = [random.randint(-1000, 1000) for i in range(1000)]
 
-def morse_decoder(s):
-    phrase = s.split(' ')
-    word = []
-    for x in phrase:
-        if x == '':
-            word.append(' ')
-        for item in MORSE.items():
-            if x == item[0]:
-                    word.append(item[1])
-    myString = ''.join(word)
-    print(myString)
+    print(random_list)
+    asc_list = sorted(random_list)
+    print(asc_list)
+
+    result = []
+    result.append(max(asc_list))
+    while result[0] == asc_list[-1]:
+        asc_list.pop()
+    else:
+        result.append(asc_list[-1])
+
+    print(result)
 
 
-morse_decoder(".. -   .-- .- ...   .-   --. --- --- -..   -.. .- -.--")
-morse_decoder(".... . .-.. .-.. ---   .----   ..---   ...--")
-morse_decoder("--.- .-")
+get_two_max()
