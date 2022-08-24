@@ -10,11 +10,12 @@ def morse_decoder(s):
     phrase = s.split(' ')
     word = []
     for x in phrase:
-        if x == '':
-            word.append(' ')
+        if x == '' and t == '':
+                word.append(' ')
         for item in MORSE.items():
             if x == item[0]:
                     word.append(item[1])
+        t = x
     myString = ''.join(word)
     print(myString)
 
