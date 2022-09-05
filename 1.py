@@ -7,4 +7,14 @@ def is_valid(password):
         return False
 
 
-print(is_valid('qwertYa1'))
+print(is_valid('Qwerty1234'))
+print(is_valid('QWERTY1234'))
+print(is_valid('12345678'))
+print(is_valid('qwertyqwerty'))
+print(is_valid('qwerty12'))
+print(is_valid('Qwertyq1'))
+print(is_valid('QWERTYQWERTY'))
+print(is_valid('Qwerty  1234'))
+print(is_valid('Qwerty1234#$%'))
+print(is_valid('        qw12Q'))
+print(is_valid('@#$%^&*@Q12'))
